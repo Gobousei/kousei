@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
-    <title>現況確認</title>
+    <title>編集</title>
     <style>
         body{
             text-align: center;
         }
-        p{
-            line-height: 150%;
+        input{
+            margin-bottom: 10px;
         }
         button{
             width: 100px;
@@ -19,9 +19,15 @@
     </style>
 </head>
 <body>
-    <h1>現在の状況</h1>
+    <h1>編集</h1>
     <p id="now"></p>
-    <button onclick="confirm()">リロード</button>
-    <script src="./index.js" defer></script> 
+    <label for="title">タイトル</label>
+    <input type="text" id="title"><br>
+    <label for="on-time">開始時刻</label>
+    <input type="time" id="on-time"><br>
+    <label for="off-time">終了時刻</label>
+    <input type="time" id="off-time"><br>
+    <button onclick="confirm()">確認</button>
+    <script src="./main.js" defer></script> 
 </body>
 </html>
